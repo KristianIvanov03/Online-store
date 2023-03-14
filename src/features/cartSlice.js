@@ -15,7 +15,7 @@ const cartSlice = createSlice({
             const itemIndex = state.cartItems.findIndex(item => item.id === action.payload.id);
             if (itemIndex >= 0){
                 state.cartItems[itemIndex].cartQuantity += 1;
-                toast.info("increased product quantity", {
+                toast.info(`increased ${state.cartItems[itemIndex].name}cart quantity`, {
                     position: "bottom-left"
                 });
             }else{
