@@ -23,7 +23,7 @@ const Cart = () => {
                     <div className='titles'>
                         <h3 className='product-title'>Products</h3>
                         <h3 className='price'>Price</h3>
-                        <h3 className='Quantity'>Quiantity</h3>
+                        <h3 className='quantity'>Quiantity</h3>
                         <h3 className='total'>Total</h3>
                     </div>
                     <div className='cart-items'>
@@ -38,9 +38,9 @@ const Cart = () => {
                                     </div>
                                 </div>
                                 <div className='cart-product-price'>${cartItem.price}</div>
-                                <div className='cart-product-quiantity'>
+                                <div className='cart-product-quantity'>
                                     <button>-</button>
-                                    <div>{cartItem.cartQuantity}</div>
+                                    <div className='count'>{cartItem.cartQuantity}</div>
                                     <button>+</button>
                                 </div>
                                 <div className='cart-product-total-price'>${cartItem.price * cartItem.cartQuantity}</div>
