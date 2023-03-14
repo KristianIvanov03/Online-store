@@ -21,7 +21,7 @@ const cartSlice = createSlice({
             }else{
                 const tempProduct = {...action.payload, cartQuantity: 1};
                 state.cartItems.push(tempProduct);
-                toast.success("added a new product to cart", {
+                toast.success(`added ${action.payload.name} to cart`, {
                     position: "bottom-left"
                 })
             }
